@@ -154,10 +154,12 @@ footer{text-align:center;color:var(--mut);font-size:13px;padding:60px 0 40px}
 
 <script>
 /* ===== CONFIG: isi dua nilai ini dari Supabase (Settings → API) ===== */
-const CFG={
-  SUPABASE_URL:'',        // https://efcovukjsbuhrndkymjp.supabase.co/rest/v1/
-  SUPABASE_ANON_KEY:'',   // sb_publishable_zYO_HMGDVKNQh_ZSmishrA_H6VRdqu9
-  PUBLIC_DASHBOARD:false  // false
+const CFG = {
+  SUPABASE_URL: 'https://efcovukjsbuhrndkymjp.supabase.co/rest/v1/',
+  SUPABASE_ANON_KEY: 'sb_publishable_zYO_HMGDVKNQh_ZSmishrA_H6VRdqu9',
+  PUBLIC_DASHBOARD: false
+};
+
 /* =================================================================== */
 const $=i=>document.getElementById(i),
 esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),
